@@ -27,7 +27,7 @@ public class ExampleInstrumentedTest {
             = new ActivityTestRule<>(
             MainActivity.class,
             true,     // initialTouchMode
-            false);   // launchActivity. False to customize the intent
+            true);   // launchActivity. False to customize the intent
 
 
     @Test
@@ -43,10 +43,7 @@ public class ExampleInstrumentedTest {
 
         android.util.Log.d("test", bundle.toString());
 
-        Intent intent = new Intent();
-        intent.putExtra("your_key", "your_value");
 
-        activityRule.launchActivity(intent);
 
         try {
             Thread.sleep(30000);
