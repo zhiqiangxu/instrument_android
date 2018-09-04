@@ -3,10 +3,6 @@
     package="com.example.xuzhiqiang.myapplication">
 
     <uses-sdk android:minSdkVersion="10" />
-    <!-- targetPackage point to test project itself -->
-    <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="com.example.xuzhiqiang.myapplication" />
 
     <application
         android:allowBackup="true"
