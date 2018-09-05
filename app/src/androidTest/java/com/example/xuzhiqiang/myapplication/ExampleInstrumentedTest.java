@@ -46,7 +46,7 @@ public class ExampleInstrumentedTest {
 
 
         try {
-            Thread.sleep(30000);
+            Thread.sleep(10000);
         } catch (Exception e) {
 
         }

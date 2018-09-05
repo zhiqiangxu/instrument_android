@@ -20,8 +20,10 @@ android {
 
 android.sourceSets {
     androidTest {
-        java.srcDirs += "$projectDir/src/main"
-        res.srcDirs += "$projectDir/src/main/res"
+//        res.srcDirs = ["$projectDir/src/androidTest/res"]
+    }
+    main {
+        res.srcDirs = ["$projectDir/src/androidTest/res"]
     }
 }
 
